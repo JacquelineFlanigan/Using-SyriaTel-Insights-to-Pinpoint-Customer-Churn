@@ -27,7 +27,7 @@ After the Decision Tree ran, it had good numbers across precision, recall, accur
 
 ### Random Forest Model
 
-![DecisionTreeFeatureImportances](https://user-images.githubusercontent.com/79724188/134824472-3be3be6e-fe7d-4d3d-a9a6-d641cd8d2db1.png)
+![RFFI](https://user-images.githubusercontent.com/79724188/134824970-bbd5ba9e-514c-4b4e-8aea-991d9b1f505d.jpg)
 
 The Random Forest model had similar results to the Decision Tree in that it had good scores over all as well, once again even after testing different settings from the default ones; specifically changed were the number of estimators, the criterion and max depth. In addition, there was also a feature importance attribute like the Decision Tree but this one had slightly varied results. The Voicemail Plan did show as important to customer churn, but it was second to the International Plan. The only major downside to using this model is that as the dataset grows, the longer the prediction process will take.
 
