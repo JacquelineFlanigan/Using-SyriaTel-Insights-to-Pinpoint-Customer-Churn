@@ -23,6 +23,9 @@ After taking a look into our cleaned and filtered data, the modeling process beg
 
 ![DTFI](https://user-images.githubusercontent.com/79724188/134824789-2796cf42-fbcb-494f-b262-3eeaf675b99a.png)
 
+![DTFI](https://user-images.githubusercontent.com/79724188/134824819-1c66d3e2-aba3-4dc5-b245-43462379747b.png)
+
+
 After the Decision Tree ran, it had good numbers across precision, recall, accuracy and F1 scores. Even after testing variations from the default model, this held true but since Decision Tree models usually overgeneralize data and this could lead to overfitting.
 
 ### Random Forest Model
