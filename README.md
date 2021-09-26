@@ -20,11 +20,14 @@ From this dataset there were some columns that would not be used to help streaml
 After taking a look into our cleaned and filtered data, the modeling process began. We tested five models in all, with the goal to find the one that would best suit our data in addition to having our results clearly defined. We began with the Decision Tree model since it easy to use and has nice attributes to get more insight for our data. For instance, it can check feature importances and with it, we were able to see that the Voicemail Plan had a high impact on customer Churn. Below here are both the decision tree as well as the feature importance chart.
 
 ![DecisionTree](https://user-images.githubusercontent.com/79724188/134824321-011f3f6c-02b2-4a9f-9926-911984778465.png)
-![DecisionTreeFeatureImportances](https://user-images.githubusercontent.com/79724188/134824348-6969a791-9e2f-496c-851f-1909f48cbb29.png)
+
+![DecisionTreeFeatureImportances](https://user-images.githubusercontent.com/79724188/134824439-03e1009a-d166-4be7-869f-1bde656122ae.png)
 
 After the Decision Tree ran, it had good numbers across precision, recall, accuracy and F1 scores. Even after testing variations from the default model, this held true but since Decision Tree models usually overgeneralize data and this could lead to overfitting.
 
 ### Random Forest Model
+
+![DecisionTreeFeatureImportances](https://user-images.githubusercontent.com/79724188/134824472-3be3be6e-fe7d-4d3d-a9a6-d641cd8d2db1.png)
 
 The Random Forest model had similar results to the Decision Tree in that it had good scores over all as well, once again even after testing different settings from the default ones; specifically changed were the number of estimators, the criterion and max depth. In addition, there was also a feature importance attribute like the Decision Tree but this one had slightly varied results. The Voicemail Plan did show as important to customer churn, but it was second to the International Plan. The only major downside to using this model is that as the dataset grows, the longer the prediction process will take.
 
