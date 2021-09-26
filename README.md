@@ -20,6 +20,7 @@ From this dataset there were some columns that would not be used to help streaml
 After taking a look into our cleaned and filtered data, the modeling process began. We tested five models in all, with the goal to find the one that would best suit our data in addition to having our results clearly defined. We began with the Decision Tree model since it easy to use and has nice attributes to get more insight for our data. For instance, it can check feature importances and with it, we were able to see that the Voicemail Plan had a high impact on customer Churn. Below here are both the decision tree as well as the feature importance chart.
 
 ![DecisionTree](https://user-images.githubusercontent.com/79724188/134824321-011f3f6c-02b2-4a9f-9926-911984778465.png)
+![DecisionTreeFeatureImportances](https://user-images.githubusercontent.com/79724188/134824348-6969a791-9e2f-496c-851f-1909f48cbb29.png)
 
 After the Decision Tree ran, it had good numbers across precision, recall, accuracy and F1 scores. Even after testing variations from the default model, this held true but since Decision Tree models usually overgeneralize data and this could lead to overfitting.
 
@@ -39,7 +40,7 @@ Our confusion matrices are once more looking good with their results with the Ga
 
 The last model tested was the Nearest Neighbors Model (also known as KNN). This was the first model run that had differing results for the confusion matrices as shown below.
 
-CHART
+![KNNconfusionmatrix](https://user-images.githubusercontent.com/79724188/134824373-e68365cd-75ce-433d-bc68-404367cbb63b.png)
 
 With our train set data we can see that 2,393 of the customers that did not churn were correctly classified by the model to have stayed with SyriaTel but 9 were not. Also, for the consumers who did leave/churn, we see that 19 customers were correctly classified as ending their services with SyriaTel while that 245 customers were predicted to leave, didn't. Meanwhile, within our test set data we see that 603 of the customers who stayed with SyriaTel were correctly classified by the model while 5 weren't. In addition, for 1 customer they were correctly classified as canceling while 58 people who were expected to do so, remained instead.
 
@@ -49,7 +50,7 @@ However, as the dataset does grow, so does the difficulty of finding the optimal
 
 # Final Model and Results
 
-CHARTS
+![RandomForestFinalmatrix](https://user-images.githubusercontent.com/79724188/134824417-ee02248f-c235-49f6-abc8-e46cbd44ffc7.png)
 
 Random Forest Classifier model ended up the winner for our customer chrun problem! Even as the other models performed well, Random Forest stood out with high F1 scores, reliability, efficiency, and feature importances as shown above. These models are known to be resistant to outliers and having a lower risk of over fitting, while still dealing with large amounts of data. Here we ended up focusing on F1 scores since they are a good balance between recall and precision, while avoiding the class equity problem that accuracy has. We also used the best parameters feature that Random Forest has, which let us know that the most efficient class weight is balance, the criterion (a way to measure the quality of a split) was gini, with a max depth of trees being 15 and 150 estimators, our model should run smoothly.
 
