@@ -1,6 +1,7 @@
 # SyriaTel Insights
 
 Customer Retention for SyriaTel
+
 SyriaTel, a telecommunications company, are looking into what is making customers cancel their services. Below we will go through different types of categorical models to see if we can predict who will churn and describe our thought processes. 
 
 ### Methodology
@@ -33,7 +34,7 @@ The Random Forest model had similar results to the Decision Tree in that it had 
 
 ### Logistic Regression Model
 
-Once again, the results across the confusion matrices were good but that does make it harder to determing which model is the right one for this problem. The Logistic Regression models make it eeasy to implement them in addition to changing/adding information to reflect new data. They also tend to be more accurate than other models when dealing with simplistic data but you do need a large amount of said data to avoid overfitting your model. 
+Once again, the results across the confusion matrices were good but that does make it harder to determining which model is the right one for this problem. The Logistic Regression models make it easy to implement them in addition to changing/adding information to reflect new data. They also tend to be more accurate than other models when dealing with simplistic data but you do need a large amount of said data to avoid overfitting your model. 
 
 ### Gaussian Naive Bayes
 
