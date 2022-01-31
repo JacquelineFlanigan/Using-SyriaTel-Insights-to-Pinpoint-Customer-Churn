@@ -1,4 +1,4 @@
-# SyriaTel Insights
+# Using SyriaTel Insights to Pinpoint Customer Churn
 
 Customer Retention for SyriaTel
 
